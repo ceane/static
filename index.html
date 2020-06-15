@@ -2,9 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Raleway:wght@200;900&display=swap" rel="stylesheet">
     <meta name="description" content="Humanity's mission for achieving technological singularity.">
     <title>_■\™ Ceane Corporation</title>
+    <style>
+      @font-face {
+        font-family: 'Sharp Sans Extrabold';
+        src: local('Sharp Sans Extrabold'), url('SharpSans-Extrabold.otf');
+        font-weight: bold;
+      }
+    </style>
     <style>
       * {
         box-sizing: border-box;
@@ -16,55 +23,136 @@
         width: 100%;
         min-height: 100vh;
         -webkit-font-smoothing: subpixel-antialiased;
+        background: #0e0e0e;
+        color: #fff;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .brand-type-a {
+        font-family: 'Sharp Sans Extrabold', 'Raleway', sans-serif;
+        letter-spacing: 0.1rem;
+      }
+
+      .tm, .reg, .copy {
+        font-weight: 100;
       }
       
       .grid {
         display: grid;
-        padding: 3rem;
+        padding: 2rem;
+      }
+
+      .main-grid {
+        padding-top: 0;
+      }
+      
+      .display-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3rem;
+        min-height: 80vh;
+        height: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      .display-grid-item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .display-type-a {
+        font-size: 2.5rem;
+      }
+      
+      .annotation {
+        padding: 2rem 0;
+        color: #181818;
+      }
+      
+      .annotation h1 {
+        font-weight: normal;
+        font-size: 1rem;
+        color: #fff;
+        display: inline;
+      }
+
+      .footer {
+        padding: 2rem;
       }
       
       .grey-8 {
         color: #797979;
       }
+      
+      .cinema-later {
+        background-color: #181818;
+      }
+      
+      .essence-blue {
+        color: #A1D2FF;
+      }
+      
+      .topic-up {
+        color: #BFA1FF;
+      }
+      
+      .topic-since {
+        color: #979797;
+      }
+      
+      .topic-in {
+        color: #424242;
+      }
+      
+      .little-two-up {
+        font-size: 1.4rem;
+      }
     </style>
   </head>
   <body>
-    <main class="grid">
-      <header>
-        <h1>_■\™ Ceane Corporation</h1>
-        <p>Achieving humanity's mission in reaching technological singularity /// Biotech, Ao, MRM & AI</p>
+    <main class="grid main-grid">
+      <header class="annotation">
+        <h1>
+          <span>_■\<span>&trade;</span></span> 
+          <span>Ceane Corporation</span>
+          <span class="topic-in">© 2020</span>
+        </h1>
+        <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+        <span class="topic-in">achieving "the Singularity"</span>
+        <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+        <span class="topic-in"><a href="#">Products</a></span>
+        <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+        <span class="topic-in"><a href="#">Privacy & Legal</a></span>
+        <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+        <span class="topic-in"><a href="#">Team & Investors</a></span>
+        <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+        <span class="topic-in"><a href="#">Support</a></span>
       </header>
-      <br />
-      <br />
-      <br />
-      <br />
-      <section>
-        <h2>nocturnal™ – nightlife, romance & bedroom <span class="grey-8">/ coming soon</span></h2>
-        <p>Experience a whole new realm of dating, real people, real-world adventures, real real things. (21+ and over.)</p>
-      </section>
-      <br /><br />
-      <section>
-        <h2>replies™ – chats and more <span class="grey-8">/ coming soon</span></h2>
-        <p>New whole ways to message others, send payments and share photos.</p>
-      </section>
-      <br /><br />
-      <section>
-        <h2>focus™ – experience the real and virtrual realm with glamour <span class="grey-8">/ coming in the future</span></h2>
-        <p>A focus is an accessory, either ao (neurotech or smartphone) or app, for exploring, assessing, and experiencing the physical or digital realm.</p>
-      </section>
-      <footer>
-        <small>
-           ■ ––
-        </small>
-        &nbsp;&nbsp;&nbsp;///&nbsp;&nbsp;&nbsp;
-        <small>
-          from _■\™ Ceane Corporation © 2020 | San Francisco, California
-        </small>
-        &nbsp;&nbsp;&nbsp;///&nbsp;&nbsp;&nbsp;
-        <small>
-          Biotech, Ao (automation), MRM (mixed reality and materials) & AI
-        </small>
-      </footer>
+      <article class="grid display-grid">
+        <section class="cinema-later display-grid-item">
+          <h2 class="brand-type-a display-type-a">Live forever. <br /><span class="essence-blue little-two-up">really...</span></h2>
+        </section>
+        
+        <section class="cinema-later display-grid-item">
+          <h2 class="brand-type-a display-type-a"><span class="topic-up little-two-up">Focus<span class="tm">&trade;</span> on</span> <br />Date night.</h2>
+        </section>
+
+        <section class="cinema-later display-grid-item">
+          <h2 class="brand-type-a display-type-a">Ao everything. <br /><span class="topic-since little-two-up">Automation for all.</span></h2>
+        </section>
+      </article>
     </main>
+
+    <footer class="footer topic-in">
+      <span><a href="#">San Francisco, CA</a></span>
+      <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+      <span><a href="#">Biotech, Ao (automation), MRM (mixed reality and materials), & AI</a></span>
+    </footer>
   </body>
 </html>
